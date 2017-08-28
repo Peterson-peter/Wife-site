@@ -95,7 +95,7 @@
 									<?php
 									// define variables and set to empty values
 									$nameErr = $emailErr = "";
-									$name = $email = $gender = $comment = $website = "";
+									$name = $email = $comment = "";
 
 									if ($_SERVER["REQUEST_METHOD"] == "POST") {
 									  if (empty($_POST["name"])) {
@@ -132,7 +132,7 @@
   										return $data;
 										}
 										?>
-									<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+										<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 										<div class="field half first">
 											<label for="name">Name</label>
 											<input type="text" name="name" id="name" value="<?php echo $name;?>"/>
