@@ -96,11 +96,11 @@
 										<form method="post" action="http://esrlt.com/php/contact.php">
 										<div class="field half first">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" required/>
+											<input type="text" name="name" id="name" required aria-describedby="name-format" aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="Firstname Lastname">
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" required/>
+											<input type="email" name="email" id="email" required/>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
