@@ -4,7 +4,7 @@
   $field_email = $_POST['email'];
   $field_message = $_POST['message'];
 
-  $mail_to = 'leslie.crossan@esrlt.com';
+  $mail_to = 'contact@esrlt.com';
   $subject = 'New Contact Message from '.$field_name;
 
   $body_message = 'Name: '.$field_name."\n";
