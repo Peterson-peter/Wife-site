@@ -135,17 +135,17 @@
 										<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
 										<div class="field half first">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" value="<?php echo $name;?>"/>
+											<input type="text" name="name" id="name"/>
 											<span class="error">* <?php echo $nameErr;?></span>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" value="<?php echo $email;?>" />
+											<input type="text" name="email" id="email"/>
 											<span class="error">* <?php echo $emailErr;?></span>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5" value="<?php echo $message;?>" ></textarea>
+											<textarea name="message" id="message" rows="5"></textarea>
 										</div>
 										<ul class="actions">
 											<li><a href="" class="button submit">Send Message</a></li>
