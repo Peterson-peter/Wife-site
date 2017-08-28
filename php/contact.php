@@ -30,4 +30,5 @@
        </script>
   <?php
   }
+  header("Location: http://www.esrlt.com");
   ?>
