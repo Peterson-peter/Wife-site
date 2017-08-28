@@ -92,60 +92,18 @@
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
-									<?php
-									// define variables and set to empty values
-									$nameErr = $emailErr = "";
-									$name = $email = $comment = "";
-
-									if ($_SERVER["REQUEST_METHOD"] == "POST") {
-									  if (empty($_POST["name"])) {
-									    $nameErr = "Name is required";
-									  } else {
-									    $name = test_input($_POST["name"]);
-									    // check if name only contains letters and whitespace
-									    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-									      $nameErr = "Only letters and white space allowed";
-									    }
-									  }
-
-									  if (empty($_POST["email"])) {
-									    $emailErr = "Email is required";
-									  } else {
-									    $email = test_input($_POST["email"]);
-									    // check if e-mail address is well-formed
-									    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-									      $emailErr = "Invalid email format";
-									    }
-									  }
-
-									  if (empty($_POST["message"])) {
-									    $message = "";
-									  } else {
-									    $message = test_input($_POST["message"]);
-									  }
-									}
-
-										function test_input($data) {
-  										$data = trim($data);
-  										$data = stripslashes($data);
-  										$data = htmlspecialchars($data);
-  										return $data;
-										}
-										?>
-										<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+										<form method="post" action="php/contact.php">
 										<div class="field half first">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name"/>
-											<span class="error">* <?php echo $nameErr;?></span>
+											<input type="text" name="name" id="name" required/>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email"/>
-											<span class="error">* <?php echo $emailErr;?></span>
+											<input type="text" name="email" id="email" required/>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5"></textarea>
+											<textarea name="message" id="message" rows="5" required></textarea>
 										</div>
 										<ul class="actions">
 											<li><a href="" class="button submit">Send Message</a></li>
