@@ -19,6 +19,7 @@
   if ($mail_status) { ?>
       <script language="javascript" type="text/javascript">
           alert('Thank you for your message.');
+          header("Location: http://www.esrlt.com");
       window.location = 'http://';
       </script>
       <?php
@@ -26,9 +27,10 @@
   else { ?>
        <script language="javascript" type="text/javascript">
           alert('Could not send the message');
+          header("Location: http://www.esrlt.com");
       window.location = 'http://';
        </script>
   <?php
   }
-  header("Location: http://www.esrlt.com");
+
   ?>
