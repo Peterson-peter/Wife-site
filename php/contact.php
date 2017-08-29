@@ -19,15 +19,14 @@
   if ($mail_status) { ?>
       <script language="javascript" type="text/javascript">
           alert('Thank you for your message.');
-      window.location = 'http://www.esrlt.com#contact';
+      window.location = 'http://esrlt.com/#contact';
       </script>
       <?php
        }
   else { ?>
        <script language="javascript" type="text/javascript">
           alert('Could not send the message');
-          header("Location: http://www.esrlt.com");
-      window.location = 'http://www.esrlt.com#contact';
+      window.location = 'http://esrlt.com/#contact';
        </script>
   <?php
   }
