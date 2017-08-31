@@ -1721,10 +1721,10 @@
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #2692D0);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #2692D0);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #2692D0);
-				background-image: linear-gradient(to right, #5e42a6, #2692D0);
+				background-image: -moz-linear-gradient(to right, #1848A0, #2692D0);
+				background-image: -webkit-linear-gradient(to right, #1848A0, #2692D0);
+				background-image: -ms-linear-gradient(to right, #1848A0, #2692D0);
+				background-image: linear-gradient(to right, #1848A0, #2692D0);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -2563,7 +2563,7 @@
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
+					color: #1848A0;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
@@ -3380,7 +3380,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #1848A0;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3775,10 +3775,10 @@
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #2692D0);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #2692D0);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #2692D0);
-				background-image: linear-gradient(to right, #5e42a6, #2692D0);
+				background-image: -moz-linear-gradient(to right, #1848A0, #2692D0);
+				background-image: -webkit-linear-gradient(to right, #1848A0, #2692D0);
+				background-image: -ms-linear-gradient(to right, #1848A0, #2692D0);
+				background-image: linear-gradient(to right, #1848A0, #2692D0);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
